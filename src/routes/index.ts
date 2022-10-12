@@ -1,10 +1,9 @@
 import { Router } from 'express'
-import * as controllers from '../controllers/index';
 
 const routes = Router()
 
-routes.get('/', controllers.index)
-
-
+routes.get('/', (_req, _res) => {
+  _res.send('welcome express')
+})
 
 export default routes
