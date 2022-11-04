@@ -1,10 +1,5 @@
-import { NextFunction, Response, Request } from "express"
+import * as authentication from './authentication'
 
-
-export const index = (_req: Request, _res: Response, _next: NextFunction) => {
-  try {
-    _res.send('eeeee')
-  } catch (error) {
-    _next(error)
-  }
+export default {
+  authentication,
 }

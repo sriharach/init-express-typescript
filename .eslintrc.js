@@ -18,5 +18,6 @@ module.exports = {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-empty-function': 'warn',
     'no-empty-function': 'off',
+    'no-undef': 'warn',
   },
 }

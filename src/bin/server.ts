@@ -42,11 +42,11 @@ const onError = (error: any) => {
   }
 }
 
-const port = normalizePort(setting.PORT || '3000')
+const port = normalizePort(setting.settingCommon.PORT || '3000')
 
 app.set('port', port)
 
 server.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at https://localhost:${port}`)
+  console.log(`⚡️[server]: Server is running at http://localhost:${port}`)
 })
 server.on('error', onError)

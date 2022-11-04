@@ -13,8 +13,8 @@
         ],
         "program": "${workspaceFolder}/src/bin/server.ts",
         "preLaunchTask": "tsc: build - tsconfig.json",
-        "console": "externalTerminal",
-        "outFiles": ["${workspaceFolder}/**/*.js"]
+        "console": "internalConsole",
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"]
       }
     ]
   }
