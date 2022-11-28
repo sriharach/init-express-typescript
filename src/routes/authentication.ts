@@ -1,8 +1,8 @@
-import Routes from 'express'
+import express from 'express'
 import controllers from '../controllers'
 
-const routes = Routes.Router()
+const router = express.Router()
 
-routes.post('/login', controllers.authentication.Login)
+router.post('/login', controllers.authentication.Login)
 
-export default routes
+export default router

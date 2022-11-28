@@ -1,14 +1,9 @@
-import * as Routes from 'express'
-import authentication from './authentication'
+import express from 'express'
 
-const initiation = Routes.Router()
+const router = express.Router()
 
-initiation.use(
-  '/',
-  initiation.get('/', (_req, res) => {
-    res.send('welcome express')
-  }),
-)
-initiation.use('/api/authentication', authentication)
+router.get('/', (_req, res) => {
+  res.send('welcome express')
+})
 
-export default initiation
+export default router
