@@ -6,7 +6,7 @@
     "build": "npx tsc --watch",
     "start": "node dist/bin/server.js",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/bin/server.ts",
-    "up-models": "sequelize-auto -o './src/database' -d sshe_db -h localhost -u folk.sriharach -p 5432 -x postgres -e postgres -l ts"
+    "up-models": "sequelize-auto -o './src/models' -d sshe_db -h localhost -u folk.sriharach -p 5432 -x postgres -e postgres -l ts"
   },
   "license": "ISC",
   "dependencies": {
