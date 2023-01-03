@@ -1,11 +1,17 @@
 # init-express-typescript
-## version node
+## Version node
     * Node 14 OR 16 up more
 
-## build and run
+## Command
 ```bash
 # use npm
 $ npm run dev
+
+# check outdated dependencies
+$ npm outdated
+
+# update all dependencies to latest version
+$ npm update --latest
 
 # run debug
 1. Go to the page 'RUN AND DUBUG'
@@ -15,5 +21,4 @@ $ npm run dev
 $ npm run build
 ```
 
-# init-express-typescript
 -------
